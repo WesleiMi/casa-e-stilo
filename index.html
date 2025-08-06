@@ -1,1 +1,106 @@
-file:///C:/Users/Miojo/Pictures/LOJA/LOJA.html#inicio
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casa & Estilo – Produtos para o Lar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Casa & Estilo</h1>
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção Hero -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h2>Transforme sua casa com estilo e conforto</h2>
+      <p>Descubra produtos cuidadosamente selecionados para deixar seu lar ainda mais aconchegante.</p>
+      <button onclick="window.location.href='#produtos'" class="btn">Ver Produtos</button>
+    </div>
+  </section>
+
+  <!-- Seção de Produtos -->
+  <section id="produtos" class="products">
+    <div class="container">
+      <h2 class="section-title">Nossos Produtos</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x200" alt="Cesto de Vime" />
+          <h3>Cesto de Vime Decorativo</h3>
+          <p>Perfeito para organizar e decorar qualquer ambiente.</p>
+          <span class="price">R$ 89,90</span>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x200" alt="Luminária de Mesa" />
+          <h3>Luminária de Mesa Moderna</h3>
+          <p>Iluminação suave com design elegante.</p>
+          <span class="price">R$ 149,90</span>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x200" alt="Almofadas Decorativas" />
+          <h3>Kit Almofadas Decorativas</h3>
+          <p>Conjunto de 4 almofadas em tecido premium.</p>
+          <span class="price">R$ 129,90</span>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x200" alt="Porta-Velocas" />
+          <h3>Porta-Velas em Cerâmica</h3>
+          <p>Traga aconchego com luz suave e design artesanal.</p>
+          <span class="price">R$ 65,00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="about">
+    <div class="container">
+      <h2 class="section-title">Sobre Nós</h2>
+      <p>
+        Na <strong>Casa & Estilo</strong>, acreditamos que cada detalhe faz a diferença. 
+        Selecionamos produtos com qualidade, funcionalidade e design para transformar 
+        sua casa em um verdadeiro lar. Desde peças decorativas até itens práticos do dia a dia, 
+        tudo é pensado para trazer conforto e beleza ao seu espaço.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contact">
+    <div class="container">
+      <h2 class="section-title">Entre em Contato</h2>
+      <form class="contact-form" onsubmit="alert('Mensagem enviada! Em breve entraremos em contato.'); return false;">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+        <button type="submit" class="btn">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Casa & Estilo – Todos os direitos reservados.</p>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
