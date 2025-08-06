@@ -1,2 +1,2 @@
-# casa-e-stilo
+# Casa-e-Estilo
 Site de produtos para casa
