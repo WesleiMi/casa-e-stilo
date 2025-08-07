@@ -37,7 +37,7 @@ body {
 
 .logo {
   font-size: 1.8rem;
-  color: #94b0b7;
+  color: #111184;
   font-weight: 700;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .btn {
-  background-color:#23b2ee; 
+  background-color:#111184; 
   color: white;
   border: none;
   padding: 12px 30px;
