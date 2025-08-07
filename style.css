@@ -19,12 +19,11 @@ body {
   padding: 20px;
 }
 
-/* Cabeçalho */
-/* Cabeçalho com logo acima e menu abaixo */
+/* ==================== CABEÇALHO ==================== */
 .header {
   background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px 0;
+  padding: 15px 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -32,13 +31,13 @@ body {
 
 .header .container {
   display: flex;
-  flex-direction: column; /* Empilha logo e menu */
-  align-items: center;   /* Centraliza tudo */
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #4a6baf;
   font-weight: 700;
   margin: 0;
@@ -47,59 +46,52 @@ body {
 
 .nav {
   display: flex;
-  gap: 16px; /* Espaço padrão */
+  gap: 10px;
   flex-wrap: wrap;
-  margin-top: 10px;
-  justify-content: center;
-}
-
-/* Em telas menores (celular) */
-@media (max-width: 480px) {
-  .nav {
-    gap: 10px; /* Reduz o espaçamento entre os botões */
-    margin-top: 8px;
-  }
-  .nav a {
-    font-size: 0.95rem;
-    padding: 6px 10px;
-  }
+  margin-top: 8px;
 }
 
 .nav a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  font-size: 1.1rem;
-  padding: 8px 12px;
+  font-size: 1rem;
+  padding: 6px 10px;
   border-radius: 8px;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .nav a:hover {
   background-color: #4a6baf;
   color: white;
 }
-@media (min-width: 320px) and (max-width: 500px) {
+
+/* === AJUSTE FORTE PARA CELULAR === */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 0;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
   .nav {
-    gap: 8px;
-    flex-wrap: nowrap;
-    overflow-x: auto; /* Permite rolar horizontal se necessário */
-    padding: 5px 0;
-    scrollbar-width: none; /* Esconde barra de rolagem (Firefox) */
+    gap: 6px;
+    margin-top: 6px;
   }
-  .nav::-webkit-scrollbar {
-    display: none; /* Esconde barra de rolagem (Chrome) */
-  }
+
   .nav a {
-    white-space: nowrap;
+    font-size: 0.85rem;
+    padding: 4px 8px;
   }
+}
 
-
-/* Hero */
+/* ==================== SEÇÃO HERO (BANNER) ==================== */
 .hero {
   position: relative;
   width: 100%;
-  height: 500px; /* Altura do banner */
+  height: 500px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -120,8 +112,8 @@ body {
 .hero-background img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Faz a imagem cobrir todo o espaço, cortando se necessário */
-  filter: brightness(0.7); /* Deixa um pouco mais escura para destacar o texto */
+  object-fit: cover;
+  filter: brightness(0.7);
 }
 
 .hero-content h2 {
@@ -137,20 +129,24 @@ body {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* Responsivo: ajusta em telas menores */
-@media (max-width: 768px) {
-  .hero {
-    height: 400px;
-  }
-  .hero-content h2 {
-    font-size: 2rem;
-  }
-  .hero-content p {
-    font-size: 1.1rem;
-  }
+.btn {
+  background-color: #4a6baf;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+  display: inline-block;
 }
 
-/* Produtos */
+.btn:hover {
+  background-color: #3a558a;
+}
+
+/* ==================== PRODUTOS ==================== */
 .products {
   padding: 60px 0;
   background-color: #fff;
@@ -173,7 +169,7 @@ body {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
 
@@ -206,7 +202,7 @@ body {
   font-size: 1.1rem;
 }
 
-/* Sobre */
+/* ==================== SOBRE ==================== */
 .about {
   padding: 60px 0;
   background-color: #f1f4f8;
@@ -218,9 +214,10 @@ body {
   margin: 0 auto;
   font-size: 1.1rem;
   color: #555;
+  line-height: 1.7;
 }
 
-/* Contato */
+/* ==================== CONTATO ==================== */
 .contact {
   padding: 60px 0;
   background-color: #fff;
@@ -242,7 +239,7 @@ body {
   font-size: 1rem;
 }
 
-/* Rodapé */
+/* ==================== RODAPÉ ==================== */
 .footer {
   background-color: #333;
   color: #fff;
@@ -260,17 +257,6 @@ body {
   text-decoration: underline;
 }
 
-/* Responsividade */
+/* ==================== RESPONSIVO GERAL ==================== */
 @media (max-width: 768px) {
-  .nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav a {
-    margin: 10px 0;
-  }
-  .hero-content h2 {
-    font-size: 2rem;
-  }
-}
+  .
