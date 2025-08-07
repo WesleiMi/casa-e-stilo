@@ -47,9 +47,22 @@ body {
 
 .nav {
   display: flex;
-  gap: 20px; /* Espaço entre os links */
-  flex-wrap: wrap; /* Quebra linha em telas pequenas */
+  gap: 16px; /* Espaço padrão */
+  flex-wrap: wrap;
   margin-top: 10px;
+  justify-content: center;
+}
+
+/* Em telas menores (celular) */
+@media (max-width: 480px) {
+  .nav {
+    gap: 10px; /* Reduz o espaçamento entre os botões */
+    margin-top: 8px;
+  }
+  .nav a {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+  }
 }
 
 .nav a {
