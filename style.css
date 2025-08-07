@@ -93,17 +93,7 @@ body {
   .nav a {
     white-space: nowrap;
   }
-}
-/* Responsivo: bom em celular */
-@media (max-width: 600px) {
-  .nav {
-    gap: 10px;
-  }
-  .nav a {
-    font-size: 1rem;
-    padding: 6px 10px;
-  }
-}
+
 
 /* Hero */
 .hero {
